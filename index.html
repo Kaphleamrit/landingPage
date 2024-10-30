@@ -2,11 +2,17 @@
 
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Amrit Kafle</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script>
+			(function(){
+				emailjs.init("oOGIh2lQ43la7TDiv"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+			})();
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -21,8 +27,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Amrit Kafle</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<p>AWS Certified Solutions Architect - Associate | CKAD | compTIA Security+ | Ex SRE @plivo</p>
 							</div>
 						</div>
 						<nav>
@@ -43,23 +48,26 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>I’m Amrit Kafle, an SRE/DevOps enthusiast focused on cloud infrastructure, automation, and security, currently pursuing my Master’s in Cybersecurity at CSUDH. With certifications like CKAD, Security+, and AWS Cloud Practitioner, I’ve built strong skills in AWS, Terraform, Kubernetes, and Docker, using these tools to automate infrastructure and enhance system resilience through CI/CD with Jenkins.</p>
+								<p>I’m passionate about crafting adaptable, secure platforms that grow with business needs. From deploying scalable applications to ensuring robust security with Flask, Django, and real-time anomaly detection, I enjoy creating systems that are both efficient and resilient.</p>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								
+							<h3>Site Reliability Engineer (Intern), Plivo</h3>
+								<p>Developed proactive alerting systems, integrating Python with Prometheus and Slack to reduce incident detection time by 43% and automate alert handling with AWS Lambda, cutting false positives by 37%. Designed Grafana dashboards with key performance metrics for real-time insights and optimized system resilience by simulating failures with Chaos Mesh in Kubernetes. Containerized services with Docker and streamlined infrastructure updates using refined Terraform modules, enhancing consistency and scalability in AWS environments.</p>
+							<h3>Cloud Engineer (Intern), Wedmist</h3>
+							<p>Built scalable architectures with EC2, S3, Lambda, and RDS to handle high-demand workloads. Automated deployments with CloudFormation and Terraform, reducing setup time by 30%. Reduced cloud costs by 20% through Reserved Instances and Savings Plans, while accelerating release cycles by 40% using CI/CD pipelines. Enhanced security with IAM policies and centralized logging, cutting troubleshooting time by 20%.</p>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>A DevOps and SRE professional with expertise in cloud infrastructure, automation, and security, specializing in AWS, Kubernetes, Terraform, and CI/CD tools like Jenkins. Focused on creating scalable, reliable, and secure systems that enhance operational efficiency. Currently pursuing a Master’s in Cybersecurity, bringing a blend of technical skill and adaptability to streamline infrastructure and strengthen system resilience.</p>
 							</article>
 
 						<!-- Contact -->
@@ -81,15 +89,15 @@
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="Send Message" class="primary" onclick="sendEmail()" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" onclick="return false;" class="icon brands fa-twitter disabled-link"><span class="label">Twitter</span></a></li>
+									<li><a href="#" onclick="return false;" class="icon brands fa-facebook-f disabled-link"><span class="label">Facebook</span></a></li>
+									<li><a href="#" onclick="return false;" class="icon brands fa-instagram disabled-link"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Kaphleamrit" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
@@ -339,7 +347,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; copyright | Amrit Kafle</p>
 					</footer>
 
 			</div>
@@ -348,6 +356,24 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+		<script>
+			function sendEmail(event) {
+				event.preventDefault(); // Prevents page reload on submit
+	
+				const templateParams = {
+					name: document.getElementById('name').value,
+					email: document.getElementById('email').value,
+					message: document.getElementById('message').value
+				};
+	
+				emailjs.send("service_y03jpc5", "template_ti2l0i4", templateParams)
+					.then(function(response) {
+						alert("Email sent successfully!");
+					}, function(error) {
+						alert("Failed to send email. Please try again.");
+					});
+			}
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
